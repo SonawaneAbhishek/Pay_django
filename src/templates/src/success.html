@@ -1,0 +1,11 @@
+{% extends 'src/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="text-center mt-4">
+    <img src="{% static 'images/success.png' %}" style="height: 150px; width:150px;" alt="coffee">
+    <h1 class="mt-3">Thanks Your payment has been Recieved</h1>
+    <a href="{% url 'home' %}"class="btn btn-primary">Buy agin</a>
+</div>
+
+{% endblock content%}
